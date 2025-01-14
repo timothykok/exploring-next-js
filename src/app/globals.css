@@ -2,6 +2,7 @@
 @tailwind components;
 @tailwind utilities;
 
+/* Root Variables for Light and Dark Modes */
 :root {
   --background: #ffffff;
   --foreground: #171717;
@@ -18,4 +19,307 @@ body {
   color: var(--foreground);
   background: var(--background);
   font-family: Arial, Helvetica, sans-serif;
+}
+
+/* General Container Styles */
+.page-container {
+  margin: 2rem auto;
+  padding: 1rem;
+  max-width: 800px;
+  font-family: Arial, sans-serif;
+  text-align: left;
+}
+
+/* Section Styles */
+.pokemon-section,
+.counter-section,
+.users-section {
+  margin-bottom: 2rem;
+  padding: 1rem;
+  border: 1px solid #ddd;
+  border-radius: 8px;
+  background-color: #000000;
+}
+
+h1 {
+  font-size: 2rem;
+  color: #ffffff;
+}
+
+.sub-title {
+  font-size: 1.5rem;
+  color: #000000;
+}
+
+h2 {
+  font-size: 1.5rem;
+  margin-bottom: 0.5rem;
+  color: #555;
+}
+
+h3 {
+  font-size: 1.2rem;
+  margin-top: 1rem;
+  color: #777;
+}
+
+/* List Styles */
+.list {
+  list-style: none;
+  padding: 0;
+  color:black;
+}
+
+.list-item {
+  padding: 0.5rem;
+  background-color: #fff;
+  border: 1px solid #ddd;
+  margin-bottom: 0.5rem;
+  border-radius: 4px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.base-experience {
+  font-size: 1.2rem;
+  color: #ffffff;
+  padding: 0.5rem;
+  border: 1px solid #ddd;
+  border-radius: 4px;
+  background-color: #000;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+/* Counter Section */
+.counter-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin: 1rem auto;
+  padding: 1rem;
+  border: 1px solid #ddd;
+  border-radius: 8px;
+  background-color: #ffffff;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  max-width: 400px;
+}
+
+.counter-title {
+  font-size: 1.5rem;
+  margin-bottom: 1rem;
+  color: #333;
+}
+
+.counter-value {
+  font-size: 1.2rem;
+  margin-bottom: 1rem;
+  font-weight: bold;
+  color: #000;
+}
+
+.counter-button {
+  font-size: 1rem;
+  padding: 0.5rem 1rem;
+  border: none;
+  border-radius: 4px;
+  background-color: #144b0c;
+  color: #fff;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.counter-button:hover {
+  background-color: #0056b3;
+}
+
+.counter-button:active {
+  background-color: #003d82;
+}
+
+
+
+
+
+/* Users Section */
+
+.users-title{
+  color: white;
+}
+.users-section h1 {
+  font-size: 2rem;
+  margin-bottom: 1.5rem;
+  color: #28a745;
+}
+
+.user-list {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  gap: 1rem;
+  padding: 0;
+}
+
+.user-card {
+  border: 1px solid #ddd;
+  border-radius: 8px;
+  padding: 1rem;
+  background-color: #fff;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  transition: transform 0.2s ease, box-shadow 0.2s ease;
+}
+
+.user-card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 8px 12px rgba(0, 0, 0, 0.2);
+}
+
+.user-name {
+  font-size: 1.5rem;
+  font-weight: bold;
+  color: #333;
+}
+
+.user-email,
+.user-address {
+  font-size: 1rem;
+  color: #555;
+  margin: 0.5rem 0;
+}
+
+.user-details-button {
+  margin-top: 1rem;
+  padding: 0.5rem 1rem;
+  font-size: 1rem;
+  border: none;
+  border-radius: 4px;
+  background-color: #28a745;
+  color: #fff;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.user-details-button:hover {
+  background-color: #218838;
+}
+
+.comparison-title{
+  color: white;
+}
+
+/* Table Styling */
+.comparison-table {
+  width: 100%;
+  border-collapse: collapse;
+  margin: 2rem 0;
+  font-size: 1rem;
+  text-align: left;
+  background-color: #f9f9f9;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  border-radius: 8px;
+  overflow: hidden;
+}
+
+.comparison-table thead {
+  background-color: #27a511;
+  color: #fff;
+  text-transform: uppercase;
+  font-size: 0.9rem;
+}
+
+.comparison-table th,
+.comparison-table td {
+  padding: 1rem;
+  border: 1px solid #ddd;
+}
+
+.comparison-table tbody tr:nth-child(even) {
+  background-color: #f1f1f1;
+}
+
+.comparison-table tbody tr:hover {
+  background-color: #e6f7ff;
+}
+
+.comparison-table th {
+  font-weight: bold;
+}
+
+.comparison-table td {
+  font-size: 0.95rem;
+  color: #333;
+}
+
+.discount-calculator-title{
+  color: white;
+}
+
+.discount-calculator {
+  padding: 20px;
+  max-width: 400px;
+  margin: 30px auto;
+  font-family: Arial, sans-serif;
+  background-color: #f9f9f9;
+  border-radius: 8px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+.discount-calculator-title {
+  font-size: 24px;
+  text-align: center;
+  color: #333;
+  margin-bottom: 20px;
+}
+
+.input-group {
+  margin-bottom: 15px;
+}
+
+.input-label {
+  display: block;
+  margin-bottom: 5px;
+  font-weight: bold;
+  font-size: 14px;
+  color: black;
+}
+
+.input-field {
+  width: 100%;
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  box-sizing: border-box;
+  font-size: 14px;
+  color: black;
+}
+
+.calculate-button {
+  width: 100%;
+  padding: 10px;
+  background-color: #096951;
+  color: white;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  font-size: 16px;
+  transition: background-color 0.3s ease;
+}
+
+.calculate-button:hover {
+  background-color: #126404;
+}
+
+.result {
+  margin-top: 15px;
+  font-size: 18px;
+  color: #28a745;
+  font-weight: bold;
+}
+
+.error {
+  margin-top: 15px;
+  font-size: 14px;
+  color: #d9534f;
+  font-weight: bold;
+}
+
+.discount-calculator-description{
+  color: black;
 }
